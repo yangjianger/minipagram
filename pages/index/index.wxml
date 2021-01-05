@@ -1,3 +1,14 @@
 <!--pages/index/index.wxml-->
-<text class="title">Hello world</text>
-<button size="mini">按钮</button>
+<!--1.小程序数据绑定-->
+<view>hello {{name}}</view>
+<view>age: {{age}}</view>
+
+<!--2.列表展示-->
+<view>students</view>
+<view wx:for="{{students}}" wx:key="item">
+    {{item.id}} {{item.name}} {{item.age}}
+</view>
+
+<!-- 3. 事件监听 -->
+<view>当前计数： {{counter}}</view>
+<button size="mini" bindtap="incrCounter">+</button>
