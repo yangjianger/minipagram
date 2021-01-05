@@ -3,3 +3,49 @@
     color: red;
     font-size: 24rpx;
 }
+
+.pressed{
+    background-color: red;
+    color: white;
+}
+
+.box{
+    border: 2rpx solid red;
+}
+
+.box-hover-class{
+    background-color: rosybrown;
+}
+
+input{
+    margin-top: 5rpx;
+    border: 1px solid red;
+    border-radius: 4rpx;
+    padding: 5rpx;
+}
+
+.contailer1{
+    background-color: royalblue;
+    white-space: nowrap;
+}
+
+.item1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    display: inline-block;
+}
+
+.contailer2{
+    background-color: orange;
+    height: 200px;
+}
+
+.item2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    display: inline-block;
+}

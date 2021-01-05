@@ -1,14 +1,85 @@
 <!--pages/index/index.wxml-->
-<!--1.小程序数据绑定-->
-<view>hello {{name}}</view>
-<view>age: {{age}}</view>
 
-<!--2.列表展示-->
-<view>students</view>
-<view wx:for="{{students}}" wx:key="item">
-    {{item.id}} {{item.name}} {{item.age}}
+<!-- scroll-view 局部滚动，水平滚动或垂直滚动。页面一般超过屏幕高度的时候，会自动滚动 -->
+<scroll-view class="contailer1" scroll-x>
+    <view wx:for="{{10}}" wx:key="item" class="item1">{{item}}</view>
+</scroll-view>
+
+<scroll-view 
+    class="contailer2" 
+    scroll-y
+    bindscroll="handleBindScroll"
+>
+    <view wx:for="{{10}}" wx:key="item" class="item2">{{item}}</view>
+</scroll-view>
+
+<!-- input -->
+<input type="text" value="hahah"/>
+<input type="text" password value="hahah"/>
+<input type="number" password value="hahah"/>
+<input type="text" placeholder="输入框为空时占" bindinput="handleBindInput"/>
+
+<!--1.基本使用 -> span -->
+<text>Hello world</text>
+
+<!--2.user-select-->
+<text user-select="{{true}}">Hello YJ</text>
+
+<!-- 3.space 决定文本空格的大小 -->
+<text>Hello World\n</text>
+<!-- 根据字体设置的空格大小	 -->
+<text space="nbsp">Hello World\n</text>
+<!-- 中文字符空格一半大小 -->
+<text space="ensp">Hello World\n</text>
+<!-- 中文字符空格大小 -->
+<text space="emsp">Hello World\n</text>
+
+<!-- 4.decode 属性：是否解码文本 -->
+<text decode="{{true}}">5 &gt; 3\n</text>
+
+<!-- 1.button 基本使用 -->
+<button>按钮</button>
+
+<!-- 2.size 属性 -->
+<button size="mini">按钮</button>
+
+<!-- 3.type 属性 -->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- 4.plain 按钮是否镂空，背景色透明 -->
+<button size="mini" type="warn" plain>按钮</button>
+
+<!-- 5.loading -->
+<button size="mini" type="warn" plain loading disabled>按钮</button>
+
+<button size="mini"  hover-class="pressed">按钮</button>
+
+<!-- 6.open-type -->
+<button size="mini">按钮</button>
+
+<!-- 1.view 组件-> div  hover-stop-propagation 是否阻止冒泡 -->
+<view class="box" 
+    hover-class="box-hover-class"
+>
+    <text>aaa</text>
+    <button size="mini">按钮</button>
 </view>
 
-<!-- 3. 事件监听 -->
-<view>当前计数： {{counter}}</view>
-<button size="mini" bindtap="incrCounter">+</button>
+<!-- 
+    image
+    1.可以写成单标签，也可以写成双标签
+    2.默认有宽高的，即使没有图片地址，默认宽高是320x240
+    3.是一个行内块级元素(inline-block)
+-->
+<image src="/assets/test/images.png"></image>
+<image src="https://s2.jiguo.com/ed590101-e74c-4240-a562-40c09daf5340" lazy-load bindload="handleImageLoad"></image>
+
+<image show-menu-by-longpress src="https://s2.jiguo.com/ed590101-e74c-4240-a562-40c09daf5340"></image>
+
+<!-- 补充：相册中图片 -->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"></image>
+
+
