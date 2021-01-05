@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a33a071c-23c6-4f1e-b8ab-f418afa9a1e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/tabbar/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tabbar/cart_active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tabbar/category.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tabbar/category_active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tabbar/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tabbar/home_active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tabbar/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tabbar/profile_active.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -76,7 +85,7 @@
       <updated>1609827038191</updated>
       <workItem from="1609827044645" duration="101000" />
       <workItem from="1609827208280" duration="785000" />
-      <workItem from="1609828130382" duration="4997000" />
+      <workItem from="1609828130382" duration="7519000" />
     </task>
     <servers />
   </component>
@@ -88,14 +97,14 @@
       <screen x="-359" y="-1080" width="1920" height="1080" />
     </state>
     <state x="201" y="-876" key="#HTML/0.0.1280.800/-359.-1080.1920.1080@-359.-1080.1920.1080" timestamp="1609827640492" />
-    <state x="201" y="-876" key="#JSON" timestamp="1609827670683">
+    <state x="201" y="-876" key="#JSON" timestamp="1609835705680">
       <screen x="-359" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="201" y="-876" key="#JSON/0.0.1280.800/-359.-1080.1920.1080@-359.-1080.1920.1080" timestamp="1609827670683" />
-    <state x="201" y="-876" key="#JavaScript" timestamp="1609828371035">
+    <state x="201" y="-876" key="#JSON/0.0.1280.800/-359.-1080.1920.1080@-359.-1080.1920.1080" timestamp="1609835705680" />
+    <state x="201" y="-876" key="#JavaScript" timestamp="1609835721668">
       <screen x="-359" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="201" y="-876" key="#JavaScript/0.0.1280.800/-359.-1080.1920.1080@-359.-1080.1920.1080" timestamp="1609828371035" />
+    <state x="201" y="-876" key="#JavaScript/0.0.1280.800/-359.-1080.1920.1080@-359.-1080.1920.1080" timestamp="1609835721668" />
     <state x="110" y="-904" key="SettingsEditor" timestamp="1609827495745">
       <screen x="-359" y="-1080" width="1920" height="1080" />
     </state>
