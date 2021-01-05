@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a33a071c-23c6-4f1e-b8ab-f418afa9a1e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/tabbar/cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tabbar/cart_active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tabbar/category.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tabbar/category_active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tabbar/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tabbar/home_active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tabbar/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tabbar/profile_active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
-    </list>
+    <list default="true" id="a33a071c-23c6-4f1e-b8ab-f418afa9a1e0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +73,7 @@
       <updated>1609827038191</updated>
       <workItem from="1609827044645" duration="101000" />
       <workItem from="1609827208280" duration="785000" />
-      <workItem from="1609828130382" duration="7519000" />
+      <workItem from="1609828130382" duration="7933000" />
     </task>
     <servers />
   </component>
