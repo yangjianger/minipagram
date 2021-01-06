@@ -1,3 +1,56 @@
 <!--pages/index/index.wxml-->
-<text class="title">Hello world</text>
-<button size="mini">按钮</button>
+<!--组件化-->
+
+<!-- 
+
+    使用自定义组件
+    1.在index.json中注册组件
+        "usingComponents": {
+            "my-cpn": "/components/my-cpn/my-cpn"
+        }
+    2.使用自定义组件
+ -->
+ <my-cpn></my-cpn>
+ <my-cpn></my-cpn>
+
+ <!-- 样式细节 -->
+ <my-style></my-style>
+
+ <!-- 传递数据 -->
+ <my-prop title="{{title}}" student="{{student}}" titleclass="red"></my-prop>
+ <my-prop titleclass="red"></my-prop>
+
+ <!-- 传递事件 -->
+ <view>当前计数：{{counter}}</view>
+ <my-event bind:increment="increment"></my-event>
+
+ <!-- demo -->
+ <my-tab-control tab-control="{{tabControl}}" bind:handleControl="handleControl"></my-tab-control>
+
+ <!-- 操作子组件数据 -->
+ <view>
+     <button size="mini" bind:tap="handleClick">修改组件内的数据</button>
+ </view>
+ <my-sel id="sel-id"></my-sel>
+
+ <!-- slot 插槽 -->
+ <!-- 单个插槽 -->
+ <my-slot>
+    <button size="mini">按钮</button>
+ </my-slot>
+
+ <my-slot>
+    <text>文本</text>
+ </my-slot>
+
+ <!-- 多个插槽 -->
+ <!-- 注意：
+    1.给每一个插槽取一个名字
+    2.必须在Component对象中添加一个选项 options
+-->
+ <my-mslot>
+     <button size="mini" slot="slot2">aaa</button>
+     <slider value="50" slot="slot1"></slider>
+     <button size="mini" slot="slot3">嘻嘻嘻</button>
+ </my-mslot>
+

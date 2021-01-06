@@ -1,0 +1,8 @@
+/* components/my-cpns/my-cpns.wxss */
+.title{
+  color: red;
+}
+
+.content{
+  color: orchid;
+}

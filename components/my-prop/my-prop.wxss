@@ -1,0 +1,10 @@
+/* components/my-prop/my-prop.wxss */
+.title{
+  font-size: 28rpx;
+  color: aqua;
+}
+
+.content{
+  font-size: 30rpx;
+  color: orange;
+}

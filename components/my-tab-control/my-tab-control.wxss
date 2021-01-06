@@ -1,0 +1,19 @@
+/* components/my-tab-control/my-tab-control.wxss */
+.tab-control{
+  display: flex;
+}
+
+.control{
+  flex: 1;
+  text-align: center;
+}
+
+.active{
+  color: red;
+}
+
+.active .control-text{
+  padding: 10rpx 20rpx;
+  border-bottom: 6rpx solid red;
+}
+
