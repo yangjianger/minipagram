@@ -1,0 +1,21 @@
+//js 代码
+var info = {
+
+  message: "Hello World!",
+
+  sum: function(num1, num2){
+    return num1 + num2;
+  },
+
+  //保留两位小数
+  priceFormat: function(price, num){
+    var num = num || 2;
+    return price.toFixed(num);
+  }
+
+};
+
+//导出
+module.exports = {
+  info: info,
+};

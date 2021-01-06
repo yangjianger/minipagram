@@ -5,13 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
+    message: "hello world",
+    age: 18,
+    nowTime: new Date().toLocaleString(),
+    isActive: false,
+    isShow: false,
+    student:{
+      name: "aa",
+      age: 19
+    }
+  },
 
+  selectColor(){
+    this.setData({
+      isActive: !this.data.isActive
+    });
+  },
+
+  selectIf(){
+    this.setData({
+      isShow: !this.data.isShow
+    });
+  },
+
+  handleParams(ev){
+    console.log(ev)
+    console.log(typeof parseInt(ev.currentTarget.dataset.hi).toString())
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+    setInterval(() => {
+      this.setData({
+        nowTime: new Date().toLocaleString()
+      })
+    }, 1000);
 
   },
 

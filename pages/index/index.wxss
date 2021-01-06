@@ -1,5 +1,15 @@
 /* pages/index/index.wxss */
+
+/* rpx */
 .title{
     color: red;
     font-size: 24rpx;
+}
+
+.box2{
+    color: orange;
+}
+
+.active{
+    color: red;
 }

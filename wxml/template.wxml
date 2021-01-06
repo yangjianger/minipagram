@@ -1,0 +1,6 @@
+<template name="msgItem">
+    <view>
+        <button size="mini">{{btnText}}</button>
+        <view>{{content}}</view>
+    </view>
+</template>

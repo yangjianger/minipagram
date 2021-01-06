@@ -1,3 +1,86 @@
 <!--pages/index/index.wxml-->
-<text class="title">Hello world</text>
-<button size="mini">按钮</button>
+<view>
+
+    <!-- 事件 -->
+    <view>
+        <button size="mini"
+           bindtap="handleParams"
+           data-hi="123"
+           data-item="{{student}}"
+        >按钮</button>
+    </view>
+
+    <!-- 
+        wxs 出现的场景: 因为在wxml中不能直接使用js中定义的函数对数据的操作。
+    -->
+    <!-- wxs 定义 -->
+    <!-- 
+        1.第一种 在wxml中直接定义
+        <wxs module="info">
+        //js 代码
+        var message = "Hello World!";
+        var sum = function(num1, num2){
+            return num1 + num2;
+        };
+
+        //导出
+        module.exports = {
+            message: message,
+            sum: sum,
+        };
+    </wxs> 
+-->
+
+    <!-- 2. 第二种 定义在wxs文件中，再使用wxs标签导入 -->
+    <!-- 这里有时候需要使用相对路劲 -->
+    <wxs src="/wxs/info.wxs" module="info"></wxs>
+    <view>
+        <view>{{info.info.message}}</view>
+        <view>12 + 32 = {{info.info.sum(12, 32)}}</view>
+        <view>{{info.info.priceFormat(25.7889)}}</view>
+    </view>
+
+    <text class="title">{{message + " " + message}}</text>
+    <text class="container">heheh</text>    
+    <text>{{age > 18? "aa": "bb"}}</text>
+    <view>
+        <text>{{nowTime}}</text>
+    </view>
+
+    <view>
+        <button size="mini" bindtap="selectColor">切换颜色</button>
+    </view>
+    <view class="box2 {{isActive?'active': ''}}">
+        <text>哈哈哈</text>
+    </view>
+
+    <!-- if 操作 -->
+    <view>
+        <button size="mini" bindtap="selectIf">切换</button>
+       
+        <block wx:if="{{isShow}}">
+            <view>嘻嘻嘻</view>
+            <view>嘻嘻嘻</view>
+            <view>嘻嘻嘻</view>
+        </block>
+        <view wx:else>hahah</view>
+
+        <!-- hidden -->
+
+        <view hidden="{{isShow}}">hidden</view>
+
+
+        <!-- 没有自定义组件的时候，用template代替 -->
+
+        <import src="/wxml/template.wxml"></import>
+
+        <!-- 使用模板 -->
+        <template is="msgItem" data="{{btnText: '按钮', content: 'hahah'}}"></template>
+        <template is="msgItem" data="{{btnText: '警告', content: 'xixix'}}"></template>
+
+        
+        
+
+    </view>
+
+</view>
