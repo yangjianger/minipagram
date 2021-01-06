@@ -1,3 +1,21 @@
 <!--pages/index/index.wxml-->
 <text class="title">Hello world</text>
-<button size="mini">按钮</button>
+<button size="mini" bind:tap="showTocst">show tocst</button>
+<button size="mini" bind:tap="showModal">showModal</button>
+<button size="mini" bind:tap="showActionSheet">showActionSheet</button>
+
+<button size="mini" open-type="share">分享</button>
+
+<button size="mini" bind:tap="handleLogin">登录</button>
+
+<!-- 1.页面跳转 传递数据 -->
+<navigator url="/pages/detail/detail?id=12345">跳转到详情</navigator>
+<navigator url="/pages/detail/detail" open-type="redirectTo">跳转到详情</navigator>
+
+<!-- 2. navigator属性 open-type -->
+<navigator url="/pages/about/about" open-type="switchTab">跳转到关于</navigator>
+
+<!-- 3.返回 -->
+<view>{{name}}</view>
+
+<button bind:tap="handlePushDetail">跳转到详情页</button>
